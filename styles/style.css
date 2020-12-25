@@ -1,0 +1,14 @@
+body {
+  margin: 100px auto;
+  text-align: center;
+}
+
+canvas {
+  display: none;
+}
+
+#start_btn {
+  font-size: 40px;
+  font-family: 'ＭＳゴシック';
+  text-align: center;
+}

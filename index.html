@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テトリス</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <canvas id="can"></canvas>
+  <script>
+  function start() {
+    const can = document.getElementById("can");
+    can.style.display = 'inline';
+    let script = document.createElement("script");
+    script.src = "js/main.js"; // 読み込みたい外部JSのURL
+    document.body.appendChild(script);
+    const btn = document.getElementById("start_btn");
+    btn.remove();
+  }
+    </script>
+    <button onclick="start()" id="start_btn">START</button>
+    <p id="score"></p>
+</body>
+</html>
